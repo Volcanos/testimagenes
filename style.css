@@ -1,0 +1,88 @@
+h1, h2 {
+    margin-left: 80px;
+}
+.container {
+    margin: 0 80px 50px 80px;
+    position: relative;
+}
+.container > img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 3px;
+    opacity: .5;
+}
+.border {
+    display: block;
+    position: absolute;
+    border: 3px dashed orange;
+    background: url(./imagen.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 2;
+    /* opacity: .5; */
+}
+.container.contain .border {
+    background-size: contain;
+    background-color: rgba(255, 166, 0, 0.35);
+    background-position: top;
+}
+.container.deformed .border img {
+    width: 100%;
+    height: 100%;
+}
+.container.nearquadportrait {
+    width: 934px;
+    height: 525px;
+}
+.container.nearquadportrait .border {
+    height: 525px;
+    width: 394px;
+    left: 267px;
+}
+.container.nearquadlandscape {
+    width: 700px;
+    height: 394px;
+}
+.container.nearquadlandscape .border {
+    width: 525px;
+    height: 394px;
+    left: 84px;
+}
+.container.mobileportrait {
+    width: 887px;
+    height: 500px;
+}
+.container.mobileportrait .border {
+    width: 280px;
+    height: 500px;
+    left: 301px;
+}
+.container.mobilelandscape {
+    width: 498px;
+    height: 280px;
+}
+.container.mobilelandscape .border {
+    height: 280px;
+    width: 500px;
+    left: 0px;
+}
+.container.wideportrait {
+    width: 887px;
+    height: 500px;
+}
+.container.wideportrait .border {
+    height: 500px;
+    width: 210px;
+    left: 336px;
+}
+.container.widelandscape {
+    width: 500px;
+    height: 284px;
+}
+.container.widelandscape .border {
+    height: 210px;
+    width: 500px;
+    top: 36px;
+}
+.container.widelandscape img {
+    padding-left: 3px;
+}
